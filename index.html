@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IntercambiaHogar — Intercambia hospedajes y comparte solo gastos comunes, sin arriendos caros.">
+  <title>IntercambiaHogar — Intercambio de hospedajes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#/" class="logo">
+        <span class="logo-icon" aria-hidden="true">⌂</span>
+        <span class="logo-text">Intercambia<span>Hogar</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#/" data-nav="inicio">Inicio</a>
+        <a href="#/explorar" data-nav="explorar">Explorar</a>
+        <a href="#/publicar" data-nav="publicar">Publicar</a>
+        <a href="#/chat" data-nav="chat">Chat</a>
+        <a href="#/terminos" data-nav="terminos">Términos</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="app" class="app-main" role="main"></main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 IntercambiaHogar. Intercambia espacios, comparte gastos, construye confianza.</p>
+      <div class="footer-links">
+        <a href="#/terminos">Términos y condiciones</a>
+        <a href="#/denuncia">Denunciar</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/store.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
